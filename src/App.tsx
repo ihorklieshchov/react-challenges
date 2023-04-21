@@ -1,1 +1,7 @@
-export const App = () => <div>hi</div>;
+import { GuessColor } from './guess-color/GuessColor';
+
+export const App = () => (
+  <div className="preview">
+    <GuessColor />
+  </div>
+);
