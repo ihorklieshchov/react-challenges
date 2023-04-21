@@ -1,0 +1,27 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base",
+        "airbnb-typescript/base",
+        "prettier"
+    ],
+    "ignorePatterns": ["vite.config.ts"],
+    "overrides": [
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "eslint-plugin-tsdoc"
+    ],
+    "rules": {
+        "import/prefer-default-export": "off",
+        "max-len": ["error", { "code": 120 }],
+        "tsdoc/syntax": "warn"
+    }
+}
