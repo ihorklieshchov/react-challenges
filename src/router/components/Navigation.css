@@ -1,0 +1,36 @@
+.navigation {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.navigation h3 {
+  text-align: center;
+}
+
+.navigation h3 a {
+  text-decoration: none;
+  color: #222;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+}
+
+.navigation ul a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  color: #222;
+}
+
+.navigation ul a:hover, .navigation .active {
+  background-color: #eee;
+  font-weight: 800;
+}

@@ -1,0 +1,14 @@
+.index-page {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  padding-bottom: 5rem;
+}
+
+.index-page h2 {
+  margin: 0;
+}
+
+.index-page .emoji {
+  font-size: 3rem;
+}

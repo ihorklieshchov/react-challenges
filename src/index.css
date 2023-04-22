@@ -9,14 +9,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
-.preview {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  margin: 0;
 }
