@@ -1,20 +1,20 @@
 import './Navigation.css';
 import { NavLink, Link } from 'react-router-dom';
-import { Challanges } from '../challanges';
+import { Challenges } from '../challenge';
 
 export const Navigation = () => (
   <div className="navigation">
     <h3>
-      <Link to="/">Challanges</Link>
+      <Link to="/">Challenges</Link>
     </h3>
     <ul className="list">
-      {Challanges.map((challange) => (
-        <li key={challange.path}>
+      {Challenges.map((challenge) => (
+        <li key={challenge.path}>
           <NavLink
-            to={`challange/${challange.path}`}
+            to={`challenge/${challenge.path}`}
             className={({ isActive }) => (isActive ? 'active' : '')}
           >
-            {challange.name}
+            {challenge.name}
           </NavLink>
         </li>
       ))}

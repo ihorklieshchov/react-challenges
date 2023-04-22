@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Challanges } from './challanges';
+import { Challenges } from './challenge';
 import { ErrorPage } from './components/ErrorPage';
 import { MainLayout } from './components/MainLayout';
 import { IndexPage } from './components/IndexPage';
@@ -11,9 +11,9 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <IndexPage /> },
-      ...Challanges.map((challange) => ({
-        path: `challange/${challange.path}`,
-        element: challange.element,
+      ...Challenges.map((challenge) => ({
+        path: `challenge/${challenge.path}`,
+        element: challenge.element,
       })),
     ],
   },

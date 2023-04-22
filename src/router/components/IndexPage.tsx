@@ -2,7 +2,7 @@ import './IndexPage.css';
 
 export const IndexPage = () => (
   <div className="index-page">
-    <h2>React Challanges</h2>
+    <h2>React Challenges</h2>
     <span>
       Random challenges found on the Internet
       <br />
