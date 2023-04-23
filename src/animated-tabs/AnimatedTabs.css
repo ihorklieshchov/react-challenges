@@ -1,0 +1,33 @@
+.animated-tabs {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.animated-tabs .tab-item {
+  position: relative;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  user-select: none;
+  background-color: #fff;
+}
+
+.animated-tabs .tab-item .label {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+.animated-tabs .tab-item .active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111;
+  z-index: 1;
+}
