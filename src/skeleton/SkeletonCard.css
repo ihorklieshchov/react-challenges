@@ -1,0 +1,56 @@
+.skeleton-card {
+  --offset: 1px;
+  --blurSize: 2px;
+  --shadowColor: #ccc;
+
+  --gaps: 13px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  gap: var(--gaps);
+
+  width: 400px;
+  height: 250px;
+  padding: 16px;
+
+  border-radius: 8px;
+  background: #fff;
+  filter:
+    drop-shadow(var(--offset) var(--offset) var(--blurSize) var(--shadowColor))
+    drop-shadow(calc(-1 * var(--offset)) calc(-1 * var(--offset)) var(--blurSize) var(--shadowColor));
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;;
+
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.skeleton-card:hover {
+  --offset: 3px;
+  --blurSize: 4px;
+
+  transform: scale(1.01);
+}
+
+.skeleton-card .header {
+  display: flex;
+  gap: var(--gaps);
+}
+
+.skeleton-card .header .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  gap: var(--gaps);
+}
+
+.skeleton-card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  gap: var(--gaps);
+}
